@@ -1,0 +1,4 @@
++ echo Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-22_18-08-21
+Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-22_18-08-21
++ ''
+./kitti/scripts/kitti_car_vgg16.sh: line 11: : command not found

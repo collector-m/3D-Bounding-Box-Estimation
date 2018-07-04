@@ -1,0 +1,11 @@
++ echo Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-20_18-54-07
+Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-20_18-54-07
++ ./tools/train_net.py --gpu 1 --solver kitti/models/kitti_car/VGG16/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb kitti_car_train --cfg kitti/cfgs/kitti_car_.yml
+Called with args:
+Namespace(cfg_file='kitti/cfgs/kitti_car_.yml', gpu_id=1, imdb_name='kitti_car_train', max_iters=40000, pretrained_model='data/imagenet_models/VGG16.v2.caffemodel', randomize=False, solver='kitti/models/kitti_car/VGG16/solver.prototxt')
+Traceback (most recent call last):
+  File "./tools/train_net.py", line 63, in <module>
+    cfg_from_file(args.cfg_file)
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/fast_rcnn/config.py", line 186, in cfg_from_file
+    import yaml
+ImportError: No module named yaml

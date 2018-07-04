@@ -1,0 +1,63 @@
++ echo Logging output to kitti/logs/kitti_ped_cyc_3DOP_generic_top2K_vgg16.txt.2018-02-21_19-56-24
+Logging output to kitti/logs/kitti_ped_cyc_3DOP_generic_top2K_vgg16.txt.2018-02-21_19-56-24
++ ./tools/train_net.py --gpu 0 --solver kitti/models/kitti_ped_cyc/VGG16/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb kitti_ped_cyc_train --cfg kitti/cfgs/kitti_ped_cyc_3DOP_generic_top2K.yml
+Called with args:
+Namespace(cfg_file='kitti/cfgs/kitti_ped_cyc_3DOP_generic_top2K.yml', gpu_id=0, imdb_name='kitti_ped_cyc_train', max_iters=40000, pretrained_model='data/imagenet_models/VGG16.v2.caffemodel', randomize=False, solver='kitti/models/kitti_ped_cyc/VGG16/solver.prototxt')
+Using config:
+{'BOX_NUM': 2000,
+ 'DEDUP_BOXES': 0.0625,
+ 'EPS': 1e-14,
+ 'EXP_DIR': 'kitti_ped_cyc_3DOP_generic_top2K',
+ 'PIXEL_MEANS': array([[[95.8814, 98.7743, 93.8549]]]),
+ 'RNG_SEED': 3,
+ 'ROOT_DIR': '/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti',
+ 'TEST': {'BBOX_REG': True,
+          'MAX_SIZE': 5000,
+          'NMS': 0.3,
+          'ORT_REG': True,
+          'PROPOSAL_METHOD': '3DOP-generic',
+          'SCALES': [1295],
+          'SVM': False},
+ 'TRAIN': {'BATCH_SIZE': 128,
+           'BBOX_REG': True,
+           'BBOX_THRESH': 0.5,
+           'BG_THRESH_HI': 0.5,
+           'BG_THRESH_LO': 0.0,
+           'FG_FRACTION': 0.25,
+           'FG_THRESH': 0.5,
+           'IMS_PER_BATCH': 1,
+           'MAX_SIZE': 5000,
+           'ORT_REG': True,
+           'ORT_THRESH': 0.5,
+           'PROPOSAL_METHOD': '3DOP-generic',
+           'SCALES': [1295],
+           'SNAPSHOT_INFIX': '',
+           'SNAPSHOT_ITERS': 10000,
+           'USE_FLIPPED': True,
+           'USE_PREFETCH': False}}
+/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/datasets/../../data/kitti/object/training
+Loaded dataset `kitti_ped_cyc_train` for training
+Appending horizontally-flipped training examples...
+kitti_ped_cyc_train gt roidb loaded from /home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/data/cache/kitti_ped_cyc_train_gt_roidb.pkl
+Loading 3DOP-generic boxes
+1 / 3712
+Traceback (most recent call last):
+  File "./tools/train_net.py", line 82, in <module>
+    roidb = get_training_roidb(imdb)
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/fast_rcnn/train.py", line 119, in get_training_roidb
+    imdb.append_flipped_images()
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/datasets/imdb.py", line 108, in append_flipped_images
+    boxes = self.roidb[i]['boxes'].copy()
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/datasets/imdb.py", line 64, in roidb
+    self._roidb = self._proposal_roidb(self._obj_proposer)
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/datasets/kitti.py", line 154, in _proposal_roidb
+    method_roidb = self._load_proposals(method, gt_roidb)
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/datasets/kitti.py", line 202, in _load_proposals
+    raw_data = sio.loadmat(box_file)['boxes']
+  File "/usr/lib/python2.7/dist-packages/scipy/io/matlab/mio.py", line 134, in loadmat
+    MR = mat_reader_factory(file_name, appendmat, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/scipy/io/matlab/mio.py", line 57, in mat_reader_factory
+    byte_stream = _open_file(file_name, appendmat)
+  File "/usr/lib/python2.7/dist-packages/scipy/io/matlab/mio.py", line 23, in _open_file
+    return open(file_like, 'rb')
+IOError: [Errno 2] No such file or directory: '/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/data/cache/../proposals/3DOP-generic/mat/trainval/0000/000000.mat'

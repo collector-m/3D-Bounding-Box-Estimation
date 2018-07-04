@@ -1,0 +1,15 @@
++ echo Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-20_17-06-23
+Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-20_17-06-23
++ ./tools/train_net.py --gpu 3DOP_top2K --solver kitti/models/kitti_car/VGG16/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb kitti_car_train --cfg kitti/cfgs/kitti_car_.yml
+Traceback (most recent call last):
+  File "./tools/train_net.py", line 13, in <module>
+    from fast_rcnn.train import get_training_roidb, train_net
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/fast_rcnn/__init__.py", line 9, in <module>
+    from . import train
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/fast_rcnn/train.py", line 10, in <module>
+    import caffe
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../caffe-fast-rcnn/python/caffe/__init__.py", line 1, in <module>
+    from .pycaffe import Net, SGDSolver
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../caffe-fast-rcnn/python/caffe/pycaffe.py", line 13, in <module>
+    from ._caffe import Net, SGDSolver
+ImportError: No module named _caffe

@@ -1,0 +1,8 @@
++ echo Logging output to kitti/logs/kitti_car_3DOP_top2K_vgg16.txt.2018-02-22_18-57-21
+Logging output to kitti/logs/kitti_car_3DOP_top2K_vgg16.txt.2018-02-22_18-57-21
++ '
+time ./tools/train_net.py --gpu 0   --solver kitti/models/kitti_car/VGG16/solver.prototxt   --weights data/imagenet_models/VGG16.v2.caffemodel   --imdb kitti_car_train   --cfg kitti/cfgs/kitti_car_3DOP_top2K.yml
+'
+./kitti/scripts/kitti_car_vgg16.sh: line 17: 
+time ./tools/train_net.py --gpu 0   --solver kitti/models/kitti_car/VGG16/solver.prototxt   --weights data/imagenet_models/VGG16.v2.caffemodel   --imdb kitti_car_train   --cfg kitti/cfgs/kitti_car_3DOP_top2K.yml
+: No such file or directory

@@ -1,0 +1,11 @@
++ echo Logging output to kitti/logs/kitti_ped_cyc_3DOP_top2K_no_ort_vgg16_frcn.txt.2018-02-20_15-06-28
+Logging output to kitti/logs/kitti_ped_cyc_3DOP_top2K_no_ort_vgg16_frcn.txt.2018-02-20_15-06-28
++ ./tools/train_net.py --gpu 0 --solver kitti/models/kitti_ped_cyc/VGG16/frcn/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb kitti_ped_cyc_train --cfg kitti/cfgs/kitti_ped_cyc_3DOP_top2K_no_ort.yml
+Traceback (most recent call last):
+  File "./tools/train_net.py", line 13, in <module>
+    from fast_rcnn.train import get_training_roidb, train_net
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/fast_rcnn/__init__.py", line 8, in <module>
+    from . import config
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/fast_rcnn/config.py", line 23, in <module>
+    from easydict import EasyDict as edict
+ImportError: No module named easydict

@@ -1,0 +1,12 @@
++ echo Logging output to kitti/logs/kitti_car_3DOP_top2K_vgg16.txt.2018-06-28_19-54-54
+Logging output to kitti/logs/kitti_car_3DOP_top2K_vgg16.txt.2018-06-28_19-54-54
++ ./tools/train_net.py --gpu 0 --solver kitti/models/kitti_car/VGG16/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb kitti_car_train --cfg kitti/cfgs/kitti_car_3DOP_top2K.yml
+Traceback (most recent call last):
+  File "./tools/train_net.py", line 15, in <module>
+    from datasets.factory import get_imdb
+  File "/media/rajatmittal/1a4b8e66-3d01-4a83-8e7b-52054acd44f2/3dop-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/datasets/__init__.py", line 8, in <module>
+    from .imdb import imdb
+  File "/media/rajatmittal/1a4b8e66-3d01-4a83-8e7b-52054acd44f2/3dop-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/datasets/imdb.py", line 107
+    rint "Here1"
+               ^
+SyntaxError: invalid syntax

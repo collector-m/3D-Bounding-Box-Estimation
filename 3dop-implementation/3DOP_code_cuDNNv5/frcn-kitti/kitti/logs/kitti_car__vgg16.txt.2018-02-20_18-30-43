@@ -1,0 +1,9 @@
++ echo Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-20_18-30-43
+Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-20_18-30-43
++ ./tools/train_net.py --gpu 3DOP_top2K --solver kitti/models/kitti_car/VGG16/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb kitti_car_train --cfg kitti/cfgs/kitti_car_.yml
+Traceback (most recent call last):
+  File "./tools/train_net.py", line 15, in <module>
+    from datasets.factory import get_imdb
+  File "/home/rajatmittal/Documents/stereo-image-paper-implementation/3DOP_code_cuDNNv5/frcn-kitti/tools/../lib/datasets/__init__.py", line 43, in <module>
+    raise EnvironmentError(msg)
+EnvironmentError: MATLAB command 'matlab' not found. Please add 'matlab' to your PATH.

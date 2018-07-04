@@ -1,0 +1,7 @@
++ echo Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-22_18-08-39
+Logging output to kitti/logs/kitti_car__vgg16.txt.2018-02-22_18-08-39
++ ./tools/test_net.py --gpu --cpu --def kitti/models/kitti_car/VGG16/test.prototxt --net output/kitti_car_/kitti_car_train/vgg16_frcn_kitti_iter_40000.caffemodel --imdb kitti_car_val --cfg kitti/cfgs/kitti_car_.yml
+usage: test_net.py [-h] [--gpu GPU_ID] [--def PROTOTXT] [--net CAFFEMODEL]
+                   [--cfg CFG_FILE] [--wait WAIT] [--imdb IMDB_NAME] [--comp]
+                   [--vis] [--num_dets MAX_PER_IMAGE]
+test_net.py: error: argument --gpu: expected one argument

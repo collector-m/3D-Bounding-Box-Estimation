@@ -1,0 +1,7 @@
++ echo Logging output to 'kitti/logs/kitti_car_0]_vgg16.txt.2018-02-21_19-52-07'
+Logging output to kitti/logs/kitti_car_0]_vgg16.txt.2018-02-21_19-52-07
++ ./tools/train_net.py --gpu '[--gpu' --solver kitti/models/kitti_car/VGG16/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb kitti_car_train --cfg 'kitti/cfgs/kitti_car_0].yml'
+usage: train_net.py [-h] [--gpu GPU_ID] [--solver SOLVER] [--iters MAX_ITERS]
+                    [--weights PRETRAINED_MODEL] [--cfg CFG_FILE]
+                    [--imdb IMDB_NAME] [--rand]
+train_net.py: error: argument --gpu: invalid int value: '[--gpu'

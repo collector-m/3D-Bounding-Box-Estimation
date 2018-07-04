@@ -1,0 +1,5 @@
+07/23/2016:  Rebase Caffe-fast-rcnn to the latest version of Caffe so that it
+supports cuDNN v4 & v5. But it doesn't support cuDNN v3 any more. Using cuDNN
+v5 obtains ~35% speed up compared with v3. However, it requires a bit more GPU
+memory. If you encounter the 'out of memory' issue, you can change the input
+image scale to 1250 from 1290.

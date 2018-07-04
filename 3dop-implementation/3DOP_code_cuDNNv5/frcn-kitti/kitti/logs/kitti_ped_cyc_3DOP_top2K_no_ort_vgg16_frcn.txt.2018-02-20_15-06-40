@@ -1,0 +1,3 @@
++ echo Logging output to kitti/logs/kitti_ped_cyc_3DOP_top2K_no_ort_vgg16_frcn.txt.2018-02-20_15-06-40
+Logging output to kitti/logs/kitti_ped_cyc_3DOP_top2K_no_ort_vgg16_frcn.txt.2018-02-20_15-06-40
++ ./tools/train_net.py --gpu 0 --solver kitti/models/kitti_ped_cyc/VGG16/frcn/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb kitti_ped_cyc_train --cfg kitti/cfgs/kitti_ped_cyc_3DOP_top2K_no_ort.yml

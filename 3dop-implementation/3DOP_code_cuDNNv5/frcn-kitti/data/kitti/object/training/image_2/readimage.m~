@@ -1,0 +1,5 @@
+filename = ['000001.png']
+img = imread(filename);
+imshow(img);
+hold on;
+rectangle('Position', [387.63 181.54 (423.81 - 387.63) (203.12 - 181.54)], 'Edge)
