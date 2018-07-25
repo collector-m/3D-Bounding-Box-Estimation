@@ -22,7 +22,7 @@ a. Generating the 3D bounding box proposals. Each proposal is defined by (x,y,z,
     
 
 Future Steps - 
-a. I would like to explore more efficient ways of generating the bounding box proposal.
+a. I would like to explore more efficient ways of generating the bounding box proposal.  
 b. Try other networks like Faster RCNN, YOLO, SSD to generate 3D bounding box outputs.
 
 
