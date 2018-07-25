@@ -9,14 +9,14 @@ Languages and Softwares Used - Python, OpenCV, MATLAB, Caffe, Tensorflow.
 
 There are two main components to the project.
 1. Generating the training dataset.
-a. Generating the 3D bounding box proposals. Each proposal is defined by (x,y,z,l,w,h,theta).
-    Step 1 - Use stereo images from KITTI Dataset and feed it to trained MC-CNN Network to obtain disparity images.
-    Step 2 - Use OPENCV, disparity images and camera calibration parameters to obtain a 3D point cloud.
-    Step 3 - Use Selective Search or MS-CNN network to generate 2D bounding box proposals.
+a. Generating the 3D bounding box proposals. Each proposal is defined by (x,y,z,l,w,h,theta). \\
+    Step 1 - Use stereo images from KITTI Dataset and feed it to trained MC-CNN Network to obtain disparity images. \\
+    Step 2 - Use OPENCV, disparity images and camera calibration parameters to obtain a 3D point cloud. \\
+    Step 3 - Use Selective Search or MS-CNN network to generate 2D bounding box proposals. \\
     Step 4 - For each 2D bounding box proposal, obtain a 3D bounding box proposal by using information from 2D bounding box proposal and 3D point cloud to get the (x,y,z) coordinates for each proposal. Use the values (2.5, 1.5, 1.5) as (l,w,h) for each proposal. Consider theta to be 0 degrees for each proposal. 
 
-2. Training the CNN Network.
-    Step 1 - I used Fast RCNN Network to train the network. Instead of regressing to 2D bounding boxes, I instead regress to obtain 3D bounding boxes. I followed the instructions from 3DOP paper to train the model.
+2. Training the CNN Network. \\
+    Step 1 - I used Fast RCNN Network to train the network. Instead of regressing to 2D bounding boxes, I instead regress to obtain 3D bounding boxes. I followed the instructions from 3DOP paper to train the model. \\
     Step 2 - In the 3DOP model, change the .mat files for 3D bounding box proposals to the proposals that I generate.
     
     
