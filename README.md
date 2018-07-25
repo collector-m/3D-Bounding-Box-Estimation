@@ -4,11 +4,11 @@ The aim of the project is to detect cars in the image and obtain accurate 3D bou
 
 An overview of the project can be seen in the presentation [here](https://docs.google.com/presentation/d/1pyKTeHV6fCfuA2JL_4AxyM8y4C8QGraODTAeFzHSKos/edit?usp=sharing). I am currently updating the doc, so my apologies if all of the information is not up to date. 
 
-Dataset Used - KITTI 3D Object Detection.
-Languages and Softwares Used - Python, OpenCV, MATLAB, Caffe, Tensorflow.
+"Dataset Used" - KITTI 3D Object Detection.
+"Languages and Softwares Used" - Python, OpenCV, MATLAB, Caffe, Tensorflow.
 
-There are two main components to the project.
-1. Generating the training dataset.
+There are two main components to the project.  
+1. Generating the training dataset.  
 a. Generating the 3D bounding box proposals. Each proposal is defined by (x,y,z,l,w,h,theta).  
     Step 1 - Use stereo images from KITTI Dataset and feed it to trained MC-CNN Network to obtain disparity images.  
     Step 2 - Use OPENCV, disparity images and camera calibration parameters to obtain a 3D point cloud.  
@@ -21,7 +21,7 @@ a. Generating the 3D bounding box proposals. Each proposal is defined by (x,y,z,
     
     
 
-Future Steps - 
+Future Steps -  
 a. I would like to explore more efficient ways of generating the bounding box proposal.  
 b. Try other networks like Faster RCNN, YOLO, SSD to generate 3D bounding box outputs.
 
