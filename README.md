@@ -37,4 +37,5 @@ Car Detection 3D AP: Easy - 7.42%, Medium - 6.26%, Hard - 6.52%
 After reading some papers which uses monocular, stereo images or LIDAR point clouds, I believe that given the IoU threshold of 0.7 for cars, outputs from images although they seem visually accurate are not able to satisfy the IoU constraints of KITTI dataset. Output from LIDAR provides sparser but much more accurate depth point cloud.
 
 **Output Images:**  
-Some of the resulting output images can be downloaded from the link [here](https://drive.google.com/file/d/1m9RPrLMo4ewaO-qPSQhmiB4XWzUltElc/view?usp=sharing)
+Some of the resulting output images can be downloaded from the link [here](https://drive.google.com/file/d/1m9RPrLMo4ewaO-qPSQhmiB4XWzUltElc/view?usp=sharing)  
+In order to visualize the results download this github code and the KITTI image dataset. In the file visualization/run_demo_3DOP.m change the required paths for files and then run the file.
