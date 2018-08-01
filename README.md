@@ -28,6 +28,7 @@ b. Try other networks like Faster RCNN, YOLO, SSD to generate 3D bounding box ou
 
 
 **Accuracy results**:  
+As suggested in 3DOP implementation, I split the training dataset of 7418 images into training and validation dataset, with the validation dataset containing 3769 images. The results obtained after testing the network on the validation set are given below. 
 Car Detection 3D AP: Easy - 10.793%, Medium - 7.063%, Hard - 5.82%
 
 I also checked results from state of the art 3DOP method which uses stereo images. I downloaded their trained caffe model and generated the results for that. Here are the results that I obtain for their method.  
