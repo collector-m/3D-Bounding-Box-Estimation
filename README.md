@@ -17,7 +17,7 @@ a. Generating the 3D bounding box proposals. Each proposal is defined by (x,y,z,
 
 2. **Training the CNN Network**.  
     Step 1 - I used Fast RCNN Network to train the network. Instead of regressing to 2D bounding boxes, I instead regress to obtain 3D bounding boxes. I followed the instructions from the paper[3D Object Proposals using Stereo Imagery for Accurate Object Class Detection](https://arxiv.org/pdf/1608.07711.pdf) to train the model. Source code for this can be downloaded from the author's website.  
-    Step 2 - In the 3DOP model which needs to be downloaded from the author's website, change the .mat files for 3D bounding box proposals to the proposals that I generate. These .mat files can be downloaded from [here](https://drive.google.com/file/d/1I2Irsj-6dvHYUm82lmBfTn33hWyUxaW5/view?usp=sharing). The folder in 3DOP implementation where these files need to be unzipped is 3DOP_code_cuDNNv5/frcn-kitti/data/proposals/3DOP/car/mat/
+    Step 2 - In the 3DOP model which needs to be downloaded from the author's website, change the .mat files for 3D bounding box proposals to the proposals that I generate. These .mat files can be downloaded from [here](https://drive.google.com/file/d/1I2Irsj-6dvHYUm82lmBfTn33hWyUxaW5/view?usp=sharing). The folder in 3DOP implementation where these files need to be unzipped is 3DOP_code_cuDNNv5/frcn-kitti/data/proposals/3DOP/car/mat/.  
     Step 3 - Train the network, and monitor it to see if the loss is reducing properly and if all the required parameters are set properly.
     
     
