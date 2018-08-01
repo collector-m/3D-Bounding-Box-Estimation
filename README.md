@@ -11,7 +11,7 @@ There are two main components to the project.
 1. **Generating the training dataset**.  
 a. Generating the 3D bounding box proposals. Each proposal is defined by (x,y,z,l,w,h,theta).  
     Step 1 - Use stereo images from KITTI Dataset and feed it to trained [MC-CNN](https://github.com/jzbontar/mc-cnn) Network to obtain disparity images. The disparity images can be obtained from [here](https://drive.google.com/open?id=1oYSYB2wcLGOaLEoyMxePZg4ED7W1vadN).  
-    Step 2 - Use OPENCV, disparity images and camera calibration parameters to obtain a 3D point cloud. The algorithm file for this depthfromdisparity.py.   
+    Step 2 - Use OPENCV, disparity images and camera calibration parameters to obtain a 3D point cloud. The algorithm file for this is depthfromdisparity.py.   
     Step 3 - Use Selective Search or MS-CNN network to generate 2D bounding box proposals.  
     Step 4 - For each 2D bounding box proposal, obtain a 3D bounding box proposal by using information from 2D bounding box proposal and 3D point cloud to get the (x,y,z) coordinates for each proposal. Use standard values, for eg. the values (2.5, 1.5, 1.5) as (l,w,h) for each proposal. Consider theta or orientation to be 0 degrees for each proposal. 
 
