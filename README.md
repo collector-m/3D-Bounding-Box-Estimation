@@ -5,7 +5,7 @@ The aim of the project is to detect cars in the image and obtain accurate 3D bou
 An overview of the project can be seen in the presentation [here](https://docs.google.com/presentation/d/1pyKTeHV6fCfuA2JL_4AxyM8y4C8QGraODTAeFzHSKos/edit?usp=sharing). I am currently updating the doc, so my apologies if all of the information is not up to date. 
 
 **Dataset Used** - KITTI 3D Object Detection.  
-**Languages and Softwares Used** - Python, OpenCV, MATLAB, Caffe, Tensorflow.
+**Languages and Softwares Used** - Python, OpenCV, MATLAB, Caffe,
 
 There are two main components to the project.  
 1. **Generating the training dataset**.  
